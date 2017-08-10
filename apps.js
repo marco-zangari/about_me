@@ -1,8 +1,14 @@
 'use strict';
 
+var counter = 0;
+for (var i = 0; i < 7; i++) {
+  counter++;
+}
+
 var questionOne = prompt('Is blue your favorite color?').toUpperCase();
 if (questionOne === 'YES' || questionOne === 'Y') {
   alert('You have chosen a wonderful color!');
+  console.log(score ++)
 } else if (questionOne === 'NO' || questionOne === 'N') {
   alert('Not everyone can choose the best color EVER!');
 } else {
@@ -12,6 +18,7 @@ if (questionOne === 'YES' || questionOne === 'Y') {
 var questionTwo = prompt('Do you eat eggplant?').toUpperCase();
 if (questionTwo === 'YES' || questionTwo === 'Y') {
   alert('My heavens! Do I love aubergine!');
+  console.log(score++);
 } else if (questionTwo === 'NO' || questionTwo === 'N') {
   alert('That\'s unfortunate.');
 } else {
@@ -21,6 +28,7 @@ if (questionTwo === 'YES' || questionTwo === 'Y') {
 var questionThree = prompt('Do you enjoy garlic?').toUpperCase();
 if (questionThree === 'YES' || questionOne === 'Y') {
   alert('The allium of the gods!');
+  console.log(score++);
 } else if (questionThree === 'NO' || questionThree === 'N') {
   alert('This may - potentially - alter our ability to get along.');
 } else {
@@ -30,6 +38,7 @@ if (questionThree === 'YES' || questionOne === 'Y') {
 var questionFour = prompt('Do you like to ride your bike?').toUpperCase();
 if (questionFour === 'YES' || questionFour === 'Y') {
   alert('So do I, no way!');
+  console.log(score ++);
 } else if (questionFour === 'NO' || questionFour === 'N') {
   alert('Well, maybe it\'s time to get back out there on that bike?');
 } else {
@@ -41,6 +50,7 @@ if (questionFive === 'YES' || questionFive === 'Y') {
   alert('No way!');
 } else if (questionFive === 'NO' || questionFive === 'N') {
   alert('Yes, me neither.');
+  console.log(score++)    ;
 } else {
   alert('You need to answer either with Yes or No.');
 }
@@ -51,6 +61,7 @@ for (var i = 0; i < 4; i++) {
   if (questionSix === '14') {
     alert('On your deathbed, you will receive total consciousness.');
     break;
+    console.log(score++)
   } else if (questionSix > 14) {
     alert('On your deathbed, you will NOT receive total consciousness. No, there have been fewer.');
   }  else if (questionSix < 14){
@@ -65,6 +76,9 @@ var answerSeven = prompt('Can you guess a country that I have lived in besides t
   if (countryNames.includes(answerSeven.toUpperCase())) {
     alert('That is impressive! Nice work!');
     break;
+    console.log(score++);
   } else (answerSeven = countryNames) {
     alert('Hey, try again!');
 }
+
+alert('You got' + score + ' out of seven questions right. Nice work!');
