@@ -34,7 +34,7 @@ guessTwo();
 
 var guessThree = function(){
   var questionThree = prompt('Do you enjoy garlic?').toUpperCase();
-  if (questionThree === 'YES' || questionOne === 'Y') {
+  if (questionThree === 'YES' || questionThree === 'Y') {
     alert('The allium of the gods!');
     console.log(score++);
   } else if (questionThree === 'NO' || questionThree === 'N') {
@@ -71,32 +71,39 @@ var guessFive = function(){
 };
 guessFive();
 
-for (var i = 0; i < 4; i++) {
-  var questionSix = prompt('How many Dalai Lamas have there been up to now?');
-  console.log(questionSix);
-  if (questionSix === '14') {
-    alert('On your deathbed, you will receive total consciousness.');
-    break;
-    console.log(score++);
-  } else if (questionSix > 14) {
-    alert('On your deathbed, you will NOT receive total consciousness. No, there have been fewer.');
-  } else if (questionSix < 14){
-    alert('On your deathbed, you will NOT receive total consciousness. No, there have been more.');
+var guessSix = function(){
+  for (var i = 0; i < 4; i++) {
+    var questionSix = prompt('How many Dalai Lamas have there been up to now?');
+    console.log(questionSix);
+    if (questionSix === '14') {
+      alert('On your deathbed, you will receive total consciousness.');
+      break;
+      console.log(score++);
+    } else if (questionSix > 14) {
+      alert('On your deathbed, you will NOT receive total consciousness. No, there have been fewer.');
+    } else if (questionSix < 14){
+      alert('On your deathbed, you will NOT receive total consciousness. No, there have been more.');
+    }
   }
-}
+};
+guessSix();
 
-var countryNames = ['ITALY', 'GERMANY', 'SRI LANKA'];
-for (var i = 0; i < 6; i++){
-  var answerSeven = prompt('Can you guess a country that I have lived in besides the US?');
-  console.log(answerSeven);
-  if (countryNames.includes(answerSeven.toUpperCase())) {
-    alert('That is impressive! Nice work!');
-    console.log(score++);
-    break;
-  } else {
-    (answerSeven = countryNames);
-    alert('Hey, try again!');
+var guessSeven = function(){
+  var countryNames = ['ITALY', 'GERMANY', 'SRI LANKA'];
+  for (var i = 0; i < 6; i++){
+    var answerSeven = prompt('Can you guess a country that I have lived in besides the US?');
+    console.log(answerSeven);
+    if (countryNames.includes(answerSeven.toUpperCase())) {
+      alert('That is impressive! Nice work!');
+      console.log(score++);
+      break;
+    } else {
+      (answerSeven = countryNames);
+      alert('Hey, try again!');
 
+    }
   }
-}
+};
+guessSeven();
+
 alert('You got ' + score + ' out of seven questions right. Nice work!');
