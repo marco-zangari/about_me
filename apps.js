@@ -44,3 +44,27 @@ if (questionFive === 'YES' || questionFive === 'Y') {
 } else {
   alert('You need to answer either with Yes or No.');
 }
+
+for (var i = 0; i < 4; i++) {
+  var questionSix = prompt('How many Dalai Lamas have there been up to now?');
+  console.log(questionSix);
+  if (questionSix === '14') {
+    alert('On your deathbed, you will receive total consciousness.');
+    break;
+  } else if (questionSix > 14) {
+    alert('On your deathbed, you will NOT receive total consciousness. No, there have been fewer.');
+  }  else if (questionSix < 14){
+    alert('On your deathbed, you will NOT receive total consciousness. No, there have been more.');
+  }
+}
+
+countryNames = ['ITALY', 'GERMANY', 'SRI LANKA'];
+for (var i = 0; i < 6; i++)
+var answerSeven = prompt('Can you guess a country that I have lived in besides the US?');
+  console.log(answerSeven);
+  if (countryNames.includes(answerSeven.toUpperCase())) {
+    alert('That is impressive! Nice work!');
+    break;
+  } else (answerSeven = countryNames) {
+    alert('Hey, try again!');
+}
