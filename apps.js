@@ -4,11 +4,12 @@ var counter = 0;
 for (var i = 0; i < 7; i++) {
   counter++;
 }
-
+var score = 0;
 var questionOne = prompt('Is blue your favorite color?').toUpperCase();
 if (questionOne === 'YES' || questionOne === 'Y') {
   alert('You have chosen a wonderful color!');
-  console.log(score ++);
+  console.log(score ++ + ' score ++');
+  console.log(score + ' score');
 } else if (questionOne === 'NO' || questionOne === 'N') {
   alert('Not everyone can choose the best color EVER!');
 } else {
@@ -69,7 +70,7 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
-countryNames = ['ITALY', 'GERMANY', 'SRI LANKA'];
+var countryNames = ['ITALY', 'GERMANY', 'SRI LANKA'];
 for (var i = 0; i < 6; i++){
   var answerSeven = prompt('Can you guess a country that I have lived in besides the US?');
   console.log(answerSeven);
@@ -83,4 +84,4 @@ for (var i = 0; i < 6; i++){
 
   }
 }
-alert('You got' + score + ' out of seven questions right. Nice work!');
+alert('You got ' + score + ' out of seven questions right. Nice work!');
