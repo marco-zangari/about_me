@@ -8,7 +8,7 @@ for (var i = 0; i < 7; i++) {
 var questionOne = prompt('Is blue your favorite color?').toUpperCase();
 if (questionOne === 'YES' || questionOne === 'Y') {
   alert('You have chosen a wonderful color!');
-  console.log(score ++)
+  console.log(score ++);
 } else if (questionOne === 'NO' || questionOne === 'N') {
   alert('Not everyone can choose the best color EVER!');
 } else {
@@ -50,7 +50,7 @@ if (questionFive === 'YES' || questionFive === 'Y') {
   alert('No way!');
 } else if (questionFive === 'NO' || questionFive === 'N') {
   alert('Yes, me neither.');
-  console.log(score++)    ;
+  console.log(score++);
 } else {
   alert('You need to answer either with Yes or No.');
 }
@@ -61,7 +61,7 @@ for (var i = 0; i < 4; i++) {
   if (questionSix === '14') {
     alert('On your deathbed, you will receive total consciousness.');
     break;
-    console.log(score++)
+    console.log(score++);
   } else if (questionSix > 14) {
     alert('On your deathbed, you will NOT receive total consciousness. No, there have been fewer.');
   }  else if (questionSix < 14){
@@ -70,15 +70,16 @@ for (var i = 0; i < 4; i++) {
 }
 
 countryNames = ['ITALY', 'GERMANY', 'SRI LANKA'];
-for (var i = 0; i < 6; i++)
+for (var i = 0; i < 6; i++){
 var answerSeven = prompt('Can you guess a country that I have lived in besides the US?');
   console.log(answerSeven);
   if (countryNames.includes(answerSeven.toUpperCase())) {
     alert('That is impressive! Nice work!');
-    break;
     console.log(score++);
-  } else (answerSeven = countryNames) {
+        break;
+  } else { (answerSeven = countryNames)
     alert('Hey, try again!');
-}
 
+}
+}
 alert('You got' + score + ' out of seven questions right. Nice work!');
