@@ -64,22 +64,23 @@ for (var i = 0; i < 4; i++) {
     console.log(score++);
   } else if (questionSix > 14) {
     alert('On your deathbed, you will NOT receive total consciousness. No, there have been fewer.');
-  }  else if (questionSix < 14){
+  } else if (questionSix < 14){
     alert('On your deathbed, you will NOT receive total consciousness. No, there have been more.');
   }
 }
 
 countryNames = ['ITALY', 'GERMANY', 'SRI LANKA'];
 for (var i = 0; i < 6; i++){
-var answerSeven = prompt('Can you guess a country that I have lived in besides the US?');
+  var answerSeven = prompt('Can you guess a country that I have lived in besides the US?');
   console.log(answerSeven);
   if (countryNames.includes(answerSeven.toUpperCase())) {
     alert('That is impressive! Nice work!');
     console.log(score++);
-        break;
-  } else { (answerSeven = countryNames)
+    break;
+  } else {
+    (answerSeven = countryNames);
     alert('Hey, try again!');
 
-}
+  }
 }
 alert('You got' + score + ' out of seven questions right. Nice work!');
