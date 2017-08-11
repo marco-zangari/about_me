@@ -4,6 +4,10 @@ var counter = 0;
 for (var i = 0; i < 7; i++) {
   counter++;
 }
+
+var userName = prompt ('My name is Marco. What\'s your name?');
+console.log(userName);
+
 var score = 0;
 var guessOne = function(){
   var questionOne = prompt('Is blue your favorite color?').toUpperCase();
@@ -106,4 +110,4 @@ var guessSeven = function(){
 };
 guessSeven();
 
-alert('You got ' + score + ' out of seven questions right. Nice work!');
+alert(userName + ' got ' + score + ' out of seven questions right. Nice work!');
