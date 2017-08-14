@@ -1,4 +1,35 @@
+* {
+font-family: Courier, monospace;
+font-size: 14;
+font-variant-ligatures: normal;
+font-weight: 500;
+}
+
 h1 {
-color: #228b22;
-outline-color: invert;
+color: #rgb(128, 128, 128);
+outline-color: inherit;
+}
+
+.container {
+  height: 400px;
+  width: 400px;
+  position:relative;
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.text {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 14;
+  font-weight: 300;
+  left: 150px;
+  top: 350px;
+
+
 }
